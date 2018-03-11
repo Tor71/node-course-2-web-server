@@ -52,6 +52,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page!',
+  });
+});
+
 app.get('/bad', (req, res) => {
   //throw new Error('Could not respond to that request! http 404');
   res.send({
